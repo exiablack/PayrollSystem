@@ -1,0 +1,13 @@
+D:\cSharpProjects\PayrollSystem\PayrollSystem\bin\Debug\PayrollSystem.exe
+D:\cSharpProjects\PayrollSystem\PayrollSystem\bin\Debug\PayrollSystem.pdb
+D:\cSharpProjects\PayrollSystem\PayrollSystem\obj\x86\Debug\PayrollSystem.Properties.Resources.resources
+D:\cSharpProjects\PayrollSystem\PayrollSystem\obj\x86\Debug\PayrollSystem.csproj.GenerateResource.Cache
+D:\cSharpProjects\PayrollSystem\PayrollSystem\obj\x86\Debug\PayrollSystem.exe
+D:\cSharpProjects\PayrollSystem\PayrollSystem\obj\x86\Debug\PayrollSystem.pdb
+D:\cSharpProjects\PayrollSystem\PayrollSystem\obj\x86\Debug\PayrollSystem.LoginForm.resources
+D:\cSharpProjects\PayrollSystem\PayrollSystem\obj\x86\Debug\PayrollSystem.MainMenuForm.resources
+D:\cSharpProjects\PayrollSystem\PayrollSystem\obj\x86\Debug\PayrollSystem.SSSForm.resources
+D:\cSharpProjects\PayrollSystem\PayrollSystem\obj\x86\Debug\PayrollSystem.PhilHealthForm.resources
+D:\cSharpProjects\PayrollSystem\PayrollSystem\obj\x86\Debug\PayrollSystem.csprojResolveAssemblyReference.cache
+D:\cSharpProjects\PayrollSystem\PayrollSystem\obj\x86\Debug\PayrollSystem.TaxTableForm.resources
+D:\cSharpProjects\PayrollSystem\PayrollSystem\obj\x86\Debug\PayrollSystem.EmployeeForm.resources
