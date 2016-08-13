@@ -87,28 +87,32 @@
             // employeeMaintenanceToolStripMenuItem
             // 
             this.employeeMaintenanceToolStripMenuItem.Name = "employeeMaintenanceToolStripMenuItem";
-            this.employeeMaintenanceToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.employeeMaintenanceToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
+            this.employeeMaintenanceToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
             this.employeeMaintenanceToolStripMenuItem.Text = "Employee Maintenance";
             this.employeeMaintenanceToolStripMenuItem.Click += new System.EventHandler(this.employeeMaintenanceToolStripMenuItem_Click);
             // 
             // philHlealthMaintenanceToolStripMenuItem
             // 
             this.philHlealthMaintenanceToolStripMenuItem.Name = "philHlealthMaintenanceToolStripMenuItem";
-            this.philHlealthMaintenanceToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.philHlealthMaintenanceToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
+            this.philHlealthMaintenanceToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
             this.philHlealthMaintenanceToolStripMenuItem.Text = "PhilHlealth Maintenance";
             this.philHlealthMaintenanceToolStripMenuItem.Click += new System.EventHandler(this.philHlealthMaintenanceToolStripMenuItem_Click);
             // 
             // sSSMaintenanceToolStripMenuItem1
             // 
             this.sSSMaintenanceToolStripMenuItem1.Name = "sSSMaintenanceToolStripMenuItem1";
-            this.sSSMaintenanceToolStripMenuItem1.Size = new System.Drawing.Size(204, 22);
+            this.sSSMaintenanceToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.sSSMaintenanceToolStripMenuItem1.Size = new System.Drawing.Size(245, 22);
             this.sSSMaintenanceToolStripMenuItem1.Text = "SSS Maintenance";
             this.sSSMaintenanceToolStripMenuItem1.Click += new System.EventHandler(this.sSSMaintenanceToolStripMenuItem1_Click);
             // 
             // taxTableToolStripMenuItem
             // 
             this.taxTableToolStripMenuItem.Name = "taxTableToolStripMenuItem";
-            this.taxTableToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.taxTableToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
+            this.taxTableToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
             this.taxTableToolStripMenuItem.Text = "Tax Table";
             this.taxTableToolStripMenuItem.Click += new System.EventHandler(this.taxTableToolStripMenuItem_Click);
             // 

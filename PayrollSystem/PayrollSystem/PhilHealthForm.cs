@@ -17,11 +17,11 @@ namespace PayrollSystem
             loadTable();
         }
 
-        private void loadTable()
+        public void loadTable()
         {
             string constring = "datasource=localhost;port=3306;username=root;password=toor";
             MySqlConnection conDataBase = new MySqlConnection(constring);
-            MySqlCommand cmdDatabase = new MySqlCommand("select * from db_payroll.tblPhilHealth;", conDataBase);
+            MySqlCommand cmdDatabase = new MySqlCommand("select * from db_payroll.tblPhilHealth ORDER BY phmonthly ASC;", conDataBase);
 
             try
             {
@@ -47,9 +47,9 @@ namespace PayrollSystem
             dataGridView1.Columns[0].HeaderText = "ID";
             dataGridView1.Columns[1].HeaderText = "Range From";
             dataGridView1.Columns[2].HeaderText = "Range To";
-            dataGridView1.Columns[3].HeaderText = "Salary Credit";
-            dataGridView1.Columns[4].HeaderText = "EE Share";
-            dataGridView1.Columns[5].HeaderText = "ER Share";
+            dataGridView1.Columns[3].HeaderText = "EE Share";
+            dataGridView1.Columns[4].HeaderText = "ER Share";
+            dataGridView1.Columns[5].HeaderText = "Salary Credit";
             dataGridView1.Columns[6].HeaderText = "Monthly Premium";
         }
 
@@ -68,19 +68,19 @@ namespace PayrollSystem
                 {
                     conDataBase.Open();
                     myReader = cmdDataBase.ExecuteReader();
-                    MessageBox.Show("PhilHealth Table Updated!");
                     while (myReader.Read())
                     {
 
                     }
                     loadTable();
+                    MessageBox.Show("PhilHealth Table has successfully updated!");
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
-                //do something
-                MessageBox.Show("PhilHealth Table has successfully updated!");
+               
+                
             }
             else if (dialogResult == DialogResult.No)
             {
@@ -199,6 +199,56 @@ namespace PayrollSystem
             {
                 e.Handled = true;
             }
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            AddPhilHealthForm addPH = new AddPhilHealthForm();
+            addPH.Show();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+            DialogResult dialogResult = MessageBox.Show("Do you want to delete the selected row?", "Deleting PhilHealth Row", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                string getID = txtID.Text;
+
+            foreach (DataGridViewCell oneCell in dataGridView1.SelectedCells)
+            {
+                if (oneCell.Selected)
+                    dataGridView1.Rows.RemoveAt(oneCell.RowIndex);
+            }
+
+
+            string constring = "datasource=localhost;port=3306;username=root;password=toor";
+            string query = "DELETE from db_payroll.tblphilhealth WHERE phID ='"+ getID +"';";
+            MySqlConnection conDataBase = new MySqlConnection(constring);
+            MySqlCommand cmdDataBase = new MySqlCommand(query, conDataBase);
+            MySqlDataReader myReader;
+
+            try
+            {
+                conDataBase.Open();
+                myReader = cmdDataBase.ExecuteReader();
+                while (myReader.Read())
+                {
+
+                }
+                loadTable();
+                MessageBox.Show("PhilHealth Table has successfully updated!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                //do something else
+            }
+
         }
     }
 }

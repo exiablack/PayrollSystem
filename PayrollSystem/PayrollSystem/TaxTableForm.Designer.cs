@@ -222,6 +222,7 @@
             this.txt32.Name = "txt32";
             this.txt32.Size = new System.Drawing.Size(144, 25);
             this.txt32.TabIndex = 16;
+            this.txt32.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt32_KeyPress);
             // 
             // txt30
             // 
@@ -229,6 +230,7 @@
             this.txt30.Name = "txt30";
             this.txt30.Size = new System.Drawing.Size(144, 25);
             this.txt30.TabIndex = 15;
+            this.txt30.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt30_KeyPress);
             // 
             // txt25
             // 
@@ -236,6 +238,7 @@
             this.txt25.Name = "txt25";
             this.txt25.Size = new System.Drawing.Size(144, 25);
             this.txt25.TabIndex = 14;
+            this.txt25.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt25_KeyPress);
             // 
             // txt20
             // 
@@ -243,6 +246,7 @@
             this.txt20.Name = "txt20";
             this.txt20.Size = new System.Drawing.Size(144, 25);
             this.txt20.TabIndex = 13;
+            this.txt20.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt20_KeyPress);
             // 
             // txt15
             // 
@@ -250,6 +254,7 @@
             this.txt15.Name = "txt15";
             this.txt15.Size = new System.Drawing.Size(144, 25);
             this.txt15.TabIndex = 12;
+            this.txt15.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt15_KeyPress);
             // 
             // txt10
             // 
@@ -257,6 +262,7 @@
             this.txt10.Name = "txt10";
             this.txt10.Size = new System.Drawing.Size(144, 25);
             this.txt10.TabIndex = 11;
+            this.txt10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt10_KeyPress);
             // 
             // txt5
             // 
@@ -264,6 +270,7 @@
             this.txt5.Name = "txt5";
             this.txt5.Size = new System.Drawing.Size(144, 25);
             this.txt5.TabIndex = 10;
+            this.txt5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt5_KeyPress);
             // 
             // txt0
             // 
@@ -271,6 +278,7 @@
             this.txt0.Name = "txt0";
             this.txt0.Size = new System.Drawing.Size(144, 25);
             this.txt0.TabIndex = 9;
+            this.txt0.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt0_KeyPress);
             // 
             // txtStatus
             // 
@@ -434,6 +442,7 @@
             this.txtBaseTax.Name = "txtBaseTax";
             this.txtBaseTax.Size = new System.Drawing.Size(129, 25);
             this.txtBaseTax.TabIndex = 9;
+            this.txtBaseTax.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBaseTax_KeyPress);
             // 
             // txtPercent
             // 

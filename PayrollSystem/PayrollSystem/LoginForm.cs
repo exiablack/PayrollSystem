@@ -20,6 +20,11 @@ namespace PayrollSystem
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            ValidateCredentials();
+        }
+
+        private void ValidateCredentials()
+        {
             try
             {
                 string myConnection = "datasource=localhost;port=3306;username=root;password=toor";
@@ -31,7 +36,7 @@ namespace PayrollSystem
                 myConn.Open();
                 myReader = SelectCommand.ExecuteReader();
                 int count = 0;
-                string userType="";
+                string userType = "";
                 while (myReader.Read())
                 {
                     count += count + 1;
@@ -69,6 +74,14 @@ namespace PayrollSystem
         private void txtPassword_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = e.KeyChar != (char)Keys.Back && !char.IsSeparator(e.KeyChar) && !char.IsLetter(e.KeyChar) && !char.IsDigit(e.KeyChar);
+        }
+
+        private void txtPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                ValidateCredentials();
+            }
         }
     }
 }
